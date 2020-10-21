@@ -1,0 +1,238 @@
+@font-face {
+  font-family: "Lato";
+  src: url("./fonts/Lato/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Pacifico";
+  src: url("./fonts/PacificoFont/Pacifico.ttf");
+}
+
+/*================ Media Query Mixin ================*/
+@mixin media-query($media-query) {
+  $breakpoint-found: false;
+
+  @each $breakpoint in $grid-breakpoints {
+    $name: nth($breakpoint, 1);
+    $declaration: nth($breakpoint, 2);
+
+    @if $media-query == $name and $declaration {
+      $breakpoint-found: true;
+
+      @media only screen and #{$declaration} {
+        @content;
+      }
+    }
+  }
+
+  @if $breakpoint-found == false {
+    @warn 'Breakpoint "#{$media-query}" does not exist';
+  }
+}
+
+/*============================================================================
+  Grid Breakpoints and Class Names
+    - Do not change the variable names
+==============================================================================*/
+$grid-tiny: 360px; //custom
+$grid-medium: 750px;
+$grid-large: 990px;
+$grid-widescreen: 1400px;
+$grid-gutter: 15px;
+
+$tiny: "tiny"; //custom
+$small: "small";
+$medium: "medium";
+$medium-down: "medium-down";
+$medium-up: "medium-up";
+$large: "large";
+$large-down: "large-down";
+$large-up: "large-up";
+$widescreen: "widescreen";
+
+// The `$grid-breakpoints` list is used to build our media queries.
+// You can use these in the media-query mixin.
+$grid-breakpoints: (
+  $tiny "(max-width: #{$grid-tiny})",
+  //custom
+  $small "(max-width: #{$grid-medium - 1})",
+  $medium "(min-width: #{$grid-medium}) and (max-width: #{$grid-large - 1})",
+  $medium-down "(max-width: #{$grid-large - 1})",
+  $medium-up "(min-width: #{$grid-medium})",
+  $large "(min-width: #{$grid-large}) and (max-width: #{$grid-widescreen - 1})",
+  $large-down "(max-width: #{$grid-widescreen - 1})",
+  $large-up "(min-width: #{$grid-large})",
+  $widescreen "(min-width: #{$grid-widescreen})"
+);
+
+$ThemeColor: #10504f;
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: "Lato";
+  overflow-x: hidden;
+}
+
+.h1 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.h2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.hide-on-mobile {
+  @include media-query($small) {
+    display: none;
+  }
+}
+
+.hide-on-desktop {
+  @include media-query($medium-up) {
+    display: none;
+  }
+}
+
+.mobile-whole {
+  width: calc(100% - #{$grid-gutter * 2});
+}
+
+.mobile-half {
+  @include media-query($small) {
+    width: calc(50% - #{$grid-gutter * 1.5});
+  }
+}
+
+.desktop-third {
+  @include media-query($medium-up) {
+    width: calc(33.3333333% - #{$grid-gutter * 2 / 3});
+  }
+}
+
+.announcement-bar {
+  background-color: black;
+  color: white;
+  height: 21px;
+  text-align: center;
+}
+
+.nav-bar {
+  background-color: $ThemeColor;
+  color: white;
+  height: 45px;
+  text-align: center;
+  padding: 4px $grid-gutter;
+}
+
+.nav-bar div {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.mobile-dropdown {
+  float: left;
+  margin-top: 11px;
+}
+
+.mobile-dropdown img {
+  width: 31px;
+}
+
+.logo-container img {
+  width: 54px;
+}
+
+.cart {
+  float: right;
+  margin-top: 11px;
+}
+
+.banner {
+  min-height: 227px;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  @include media-query($small) {
+    background-image: url("./images/HeroImage1Mobile.jpg");
+  }
+  @include media-query($medium-up) {
+    background-image: url("./images/HeroImage1.jpg");
+  }
+}
+
+.banner h1 {
+  font-family: Pacifico;
+  font-size: 20px;
+  margin: 0;
+}
+
+.banner h2 {
+  margin-top: 0;
+}
+
+.img-frame {
+  width: 100%;
+  opacity: 0;
+}
+
+.banner-info {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: $grid-gutter;
+  color: white;
+}
+
+.banner-info .button {
+  background-color: black;
+  color: white;
+  width: fit-content;
+  min-width: 78px;
+  padding: 8px 10px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.collection-block {
+  padding: $grid-gutter;
+  margin-left: -$grid-gutter;
+  white-space: nowrap;
+  width: 100%;
+  list-style: none;
+}
+
+.collection-block div {
+  margin-left: $grid-gutter;
+  margin-bottom: $grid-gutter;
+  display: inline-block;
+  float: left;
+  position: relative;
+}
+
+.collection-block .collection-title {
+  height: 42px;
+  background-color: $ThemeColor;
+  width: 100%;
+  color: white;
+  font-family: Pacifico;
+  text-align: center;
+  position: absolute;
+  display: block;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 19px;
+}
+
+.collection-block div img {
+  width: 100%;
+}

@@ -36,3 +36,135 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+	margin:0;
+	font-family: 'Lato';
+	overflow: hidden;
+}
+
+.h1{
+	font-size:20px;
+	font-weight:normal;
+}
+
+.h2{
+	font-size:16px;
+	font-weight:normal;
+}
+
+@media (max-width:767px){
+	.hide-on-mobile{
+		display:none;
+	}
+}
+
+@media (min-width:768px){
+	.hide-on-desktop{
+		display:none;
+	}
+}
+
+@media (max-width:767px){
+	.mobile-half {
+		width:50%;
+	}
+}
+
+@media (min-width:768px){
+	.desktop-third{
+		width:33.33%;
+	}
+}
+
+.announcement-bar{
+	background-color:black;
+	color:white;
+	height:21px;
+	text-align:center;
+}
+
+.nav-bar{
+	background-color: #10504F;
+	color:white;
+	height:45px;
+	text-align:center;
+	padding:4px 20px;
+}
+
+.nav-bar div{
+	display:inline-block;
+	vertical-align:middle;
+	text-align:center;
+}
+
+.mobile-dropdown {
+	float:left;
+	margin-top:11px;
+}
+
+.mobile-dropdown img{
+	width:31px;
+}
+
+.logo-container img{
+	width:54px;
+}
+
+.cart{
+	float:right;
+	margin-top:11px;
+}
+
+.banner{
+	min-height:227px;
+	width:100%;
+	background-image: url("./images/HeroImage1Mobile.jpg");
+	background-size: cover;
+	position:relative;
+}
+
+.img-frame{
+	width:100%;
+	opacity:0;
+}
+
+.banner-info{
+	display:block;
+	position: absolute;
+	top: 50%;
+	padding: 20px;
+	color:white;
+	top: 71px;
+}
+
+.banner-info .button{
+    background-color: black;
+    color: white;
+    width: fit-content;
+	min-width:78px;
+    padding: 8px 10px;
+    text-align: center;
+	font-size:8px;
+	font-weight:bold;
+}
+
+.collection-block{
+	padding:20px;
+	margin-left:-20px;
+	white-space:nowrap;
+	width:100%;
+	list-style: none;
+}
+
+.collection-block div{
+	padding-left:20px;
+	margin-bottom:20px;
+	display: inline-block;
+	float: left;
+	
+}
+
+.collection-block div img{
+	width:100%;
+}

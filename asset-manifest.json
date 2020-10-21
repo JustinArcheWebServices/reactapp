@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/reactapp/static/css/main.53353dba.chunk.css",
+    "main.js": "/reactapp/static/js/main.893bbce9.chunk.js",
+    "main.js.map": "/reactapp/static/js/main.893bbce9.chunk.js.map",
+    "runtime-main.js": "/reactapp/static/js/runtime-main.f935dd26.js",
+    "runtime-main.js.map": "/reactapp/static/js/runtime-main.f935dd26.js.map",
+    "static/js/2.fffee656.chunk.js": "/reactapp/static/js/2.fffee656.chunk.js",
+    "static/js/2.fffee656.chunk.js.map": "/reactapp/static/js/2.fffee656.chunk.js.map",
+    "index.html": "/reactapp/index.html",
+    "precache-manifest.08b33b384a9a534ffe5f1b79cb81d0d8.js": "/reactapp/precache-manifest.08b33b384a9a534ffe5f1b79cb81d0d8.js",
+    "service-worker.js": "/reactapp/service-worker.js",
+    "static/css/main.53353dba.chunk.css.map": "/reactapp/static/css/main.53353dba.chunk.css.map",
+    "static/js/2.fffee656.chunk.js.LICENSE.txt": "/reactapp/static/js/2.fffee656.chunk.js.LICENSE.txt",
+    "static/media/AccessoriesImage.jpg": "/reactapp/static/media/AccessoriesImage.3181decb.jpg",
+    "static/media/AccessoriesImageMobile.jpg": "/reactapp/static/media/AccessoriesImageMobile.b281bf6b.jpg",
+    "static/media/App.scss": "/reactapp/static/media/Pacifico.6b6170fe.ttf",
+    "static/media/HeroImage2.jpg": "/reactapp/static/media/HeroImage2.3adcc50f.jpg",
+    "static/media/MensImage.jpg": "/reactapp/static/media/MensImage.21572e50.jpg",
+    "static/media/ProductImage1.jpg": "/reactapp/static/media/ProductImage1.73b1f380.jpg",
+    "static/media/Social1.jpg": "/reactapp/static/media/Social1.2637bbe6.jpg",
+    "static/media/Social2.jpg": "/reactapp/static/media/Social2.a79eb988.jpg",
+    "static/media/Social3.jpg": "/reactapp/static/media/Social3.4f51799f.jpg",
+    "static/media/Social4.jpg": "/reactapp/static/media/Social4.7e7f4aa4.jpg",
+    "static/media/Social5.jpg": "/reactapp/static/media/Social5.d017f63f.jpg",
+    "static/media/WomensImage.jpg": "/reactapp/static/media/WomensImage.c10f6255.jpg",
+    "static/media/logo.svg": "/reactapp/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f935dd26.js",
+    "static/js/2.fffee656.chunk.js",
+    "static/css/main.53353dba.chunk.css",
+    "static/js/main.893bbce9.chunk.js"
+  ]
+}

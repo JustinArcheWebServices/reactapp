@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4dac0bb189abf6f1685f0a48f6bd2428",
+    "revision": "2e375ceddf95c28246acc96a88bf504a",
     "url": "/reactapp/index.html"
   },
   {
-    "revision": "4597464ebb2bb13238b9",
-    "url": "/reactapp/static/css/main.153a8750.chunk.css"
+    "revision": "57c5cf430cff60f7fab5",
+    "url": "/reactapp/static/css/main.54d362b9.chunk.css"
   },
   {
-    "revision": "c45e88e85a380de0d39c",
-    "url": "/reactapp/static/js/2.75afe5a4.chunk.js"
+    "revision": "dc691e532de5da0fbf61",
+    "url": "/reactapp/static/js/2.ae6d8ffe.chunk.js"
   },
   {
     "revision": "65075b20798fa24012a1ad453c78c90d",
-    "url": "/reactapp/static/js/2.75afe5a4.chunk.js.LICENSE.txt"
+    "url": "/reactapp/static/js/2.ae6d8ffe.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4597464ebb2bb13238b9",
-    "url": "/reactapp/static/js/main.38e1f592.chunk.js"
+    "revision": "57c5cf430cff60f7fab5",
+    "url": "/reactapp/static/js/main.8daa0d7a.chunk.js"
   },
   {
     "revision": "e219a2030a13ac34f0be",
@@ -46,6 +46,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "cfaec045aa46f59d742faf9355cc9c42",
     "url": "/reactapp/static/media/HeroImage2Mobile.cfaec045.jpg"
+  },
+  {
+    "revision": "90e1d3559ac52f7f0f77a86e1bfd632d",
+    "url": "/reactapp/static/media/Lato-Light.90e1d355.ttf"
   },
   {
     "revision": "3b9b99039cc0a98dd50c3cbfac57ccb2",
